@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Library</title>
 </head>
 <body>
-    
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Read</th>
+                <th scope="col">Remove</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+            </tbody>
+        </table>
+        <button id="add-book">Add new book</button>
+    </div>
+
+    <div id="add-book-modal" class="modal-bg">
+        <div class="modal">
+            <p id="x">X</p>
+            <h2>Add new book</h2>
+            <form id="add-new-book-form">
+                <div class="form-field">
+                    <label name="title">Title</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div class="form-field">
+                    <label name="author">Author</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div class="form-field">
+                    <label name="pages">Pages</label>
+                    <input type="text" name="pages" id="pages" required>
+                </div>
+                <div class="form-field">
+                    <label name="read">Read</label>
+                    <input type="text" name="read" id="read" required>
+                </div>
+                <div class="form-field">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>

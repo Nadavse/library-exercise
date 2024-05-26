@@ -1,0 +1,62 @@
+.container {
+    margin: 20px;
+}
+
+table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+th {
+    border: 1px solid #dededf;
+    background-color: #eceff1;
+    color: #000000;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid #dededf;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+}
+
+.modal-bg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal {
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    background-color: white;
+    position: relative;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+#x {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
